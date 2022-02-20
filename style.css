@@ -1,3 +1,6 @@
+meta {
+    display: none;
+}
 .Header {
     width: 100%;
     position: absolute;
@@ -28,7 +31,7 @@ html {
     max-width: 100%;
     position: relative;
 }
-.HeaderLogo {
+@media screen and (min-width: 768px) .HeaderLogo {
     transition: opacity 0.2s;
 }
 a {
@@ -188,7 +191,7 @@ img {
     margin-right: 15px;
     width: 306px
 }
-.FirstViewContent__buttons a {
+@media screen and (min-width: 768px) .FirstViewContent__buttons a {
     transition: opacity 0.2s;
 }
 .FirstViewContent__buttons a {
@@ -229,8 +232,105 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.AboutWrapper {
+    padding: 110px 0;
+    background-color: #F79214;
+    padding: 45px 0;
+}
+.About {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.About__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    width: 53%;
+}
+.About__title h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.About__title h2, .About__title p {
+    color: #fff;
+    text-align: left;
+}
+.About__title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 74px;
+}
+.About__title h2>span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.About__title br {
+    display: none;
+}
+.About__title p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.About__button {
+    width: 250px;
+}
+@media screen and (min-width: 768px)
+.About__button a {
+    transition: opacity 0.2s;
+}
+.About__button a {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: #F79214 !important;
+    background-color: #fff;
+}
+.About__button a span:first-child {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.About__button a span:last-child {
+    font-size: 12px;
+    line-height: 18px;
+}
 
 
 
